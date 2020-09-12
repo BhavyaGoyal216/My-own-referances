@@ -1,0 +1,36 @@
+header, .box {
+  background-color: #e4acac;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header button, .box button {
+  margin: 20px;
+}
+
+header button:hover, .box button:hover {
+  background-color: blueviolet;
+}
+
+header button::after, .box button::after {
+  content: "heloo";
+  background-color: #babaf7;
+}
+
+.box {
+  font-size: 2em;
+  background-color: blueviolet;
+}
+/*# sourceMappingURL=style.css.map */

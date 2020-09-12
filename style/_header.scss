@@ -1,0 +1,22 @@
+@mixin flexcenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: $direction;
+}
+
+header {
+  background-color: $primarycolor;
+  @include flexcenter(row);
+  button {
+    margin: 20px;
+    &:hover {
+      background-color: blueviolet;
+    }
+    &::after {
+      content: "heloo";
+      background-color: $secondarycolor;
+    }
+  }
+}
